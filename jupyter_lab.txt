@@ -1,0 +1,19 @@
+source nombre_del_entorno/bin/activate  # en macOS y Linux
+
+pip install ipykernel
+
+
+python -m ipykernel install --user --name=nombre_del_entorno
+
+Selecciona el kernel correcto en Jupyter Lab:
+Una vez que hayas lanzado Jupyter Lab, asegúrate de seleccionar el kernel correcto para tu notebook. Deberías ver nombre_del_entorno en la lista de kernels disponibles. Si no ves el nombre de tu entorno virtual, es posible que debas reiniciar Jupyter Lab.
+
+jupyter kernelspec list
+
+
+Elimina el directorio del kernel:
+
+rm -r /ruta/a/kernels/nombre_del_kernel
+
+rmdir /s /q \ruta\a\kernels\nombre_del_kernel
+
